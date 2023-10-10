@@ -497,24 +497,24 @@ class SerDesECP5(LiteXModule):
 
             # DCU ­— unknown
             p_D_CMUSETBIASI         = "0b00",   # begin undocumented (10BSER sample code used)
-            p_D_CMUSETI4CPP         = "0d3",
-            p_D_CMUSETI4CPZ         = "0d3",
-            p_D_CMUSETI4VCO         = "0b00",
-            p_D_CMUSETICP4P         = "0b01",
-            p_D_CMUSETICP4Z         = "0b101",
-            p_D_CMUSETINITVCT       = "0b00",
-            p_D_CMUSETISCL4VCO      = "0b000",
-            p_D_CMUSETP1GM          = "0b000",
-            p_D_CMUSETP2AGM         = "0b000",
-            p_D_CMUSETZGM           = "0b000",
-            p_D_SETIRPOLY_AUX       = "0b01",
-            p_D_SETICONST_AUX       = "0b01",
-            p_D_SETIRPOLY_CH        = "0b01",
-            p_D_SETICONST_CH        = "0b10",
-            p_D_SETPLLRC            = "0d1",
-            p_D_RG_EN               = "0b0",
-            p_D_RG_SET              = "0b00",
-            p_D_REQ_ISET            = "0b011",
+            p_D_CMUSETI4CPP         = "0d3",    # 0d0 to 0d15
+            p_D_CMUSETI4CPZ         = "0d3",    # 0d0 to 0d15
+            p_D_CMUSETI4VCO         = "0b00",   # 0b0 to 0b11
+            p_D_CMUSETICP4P         = "0b01",   # 0b00 to 0b11
+            p_D_CMUSETICP4Z         = "0b101",  # 0b000 to 0b111
+            p_D_CMUSETINITVCT       = "0b00",   # 0b00 - 0b11
+            p_D_CMUSETISCL4VCO      = "0b000",  # 0b000 to 0b111
+            p_D_CMUSETP1GM          = "0b000",  # 0b000 to 0b111
+            p_D_CMUSETP2AGM         = "0b000",  # 0b000 to 0b111
+            p_D_CMUSETZGM           = "0b000",  # 0b000 to 0b111
+            p_D_SETIRPOLY_AUX       = "0b01",   # 0b00 to 0b11
+            p_D_SETICONST_AUX       = "0b01",   # 0b00 to 0b11
+            p_D_SETIRPOLY_CH        = "0b01",   # 0b00 to 0b11
+            p_D_SETICONST_CH        = "0b10",   # 0b00 to 0b11
+            p_D_SETPLLRC            = "0d1",    # 0d0 to 0d63
+            p_D_RG_EN               = "0b0",    # 0b00 to 0b11
+            p_D_RG_SET              = "0b00",   # 0b00 to 0b11
+            p_D_REQ_ISET            = "0b011",  # 0b000 to 0b111
             p_D_PD_ISET             = "0b11",   # end undocumented
 
             # DCU — FIFOs
